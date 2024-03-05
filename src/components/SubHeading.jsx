@@ -1,0 +1,10 @@
+import { Info } from 'lucide-react';
+
+export function SubHeading({title}) {
+    return (
+        <div className="flex font-semibold text-[20px] text-[#44475B] items-center gap-2 mb-4">
+            <p>{title}</p>
+            <Info size={20}/>
+        </div>
+    )
+}
