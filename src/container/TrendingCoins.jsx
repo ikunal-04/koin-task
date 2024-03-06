@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {ShowGain} from './ShowGain';
+import {ShowGain} from '../components/ShowGain';
 import axios from 'axios';
 
 export function TrendingCoins() {

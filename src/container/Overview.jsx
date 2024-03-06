@@ -1,4 +1,4 @@
-import {OverviewComp} from './OverviewComp'
+import {OverviewComp} from '../components/OverviewComp'
 
 export function Overview() {
     return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import bitcoin from '../assets/bitcoin.svg';
-import { ShowGain } from './ShowGain';
+import { ShowGain } from '../components/ShowGain';
 import bitcoinChart from '../assets/bitcoinChart.svg';
 // import TradingViewWidget  from './TradingView';
 
@@ -43,7 +43,7 @@ export function BitcoinChart() {
 
 
     return (
-        <div className="bg-white pt-6 pl-6 pb-8  rounded-lg h-max pr-8">
+        <div className="bg-white pt-6 pl-6 pb-8 rounded-lg h-max pr-8">
             <div className='flex gap-10'>
                 <img src={bitcoin} alt="bitcoin logo" />
                 <div  className='bg-[#768396] border border-[#808A9D] rounded-lg text-white'>
@@ -72,7 +72,7 @@ export function BitcoinChart() {
                 <div className='font-semibold text-base text-[#0B1426]'>
                     Bitcoin Price Chart (USD)
                 </div>
-                <div className='flex font-medium text-sm text-[#5D667B] justify-end gap-2'>
+                <div className='flex font-medium text-sm text-[#5D667B] justify-end gap-4'>
                     <p>1H</p>
                     <p>24H</p>
                     <p>7D</p>

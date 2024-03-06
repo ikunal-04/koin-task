@@ -1,9 +1,12 @@
-import { BitcoinChart } from "../components/BitcoinChart";
-import { GetStarted } from "../components/GetStarted";
-import {TrendingCoins} from "../components/TrendingCoins";
-import {Overview} from "../components/Overview";
-import {Performance} from "../components/Performance"
-import {Sentiment} from "../components/Sentiment";
+import { BitcoinChart } from "../container/BitcoinChart";
+import { GetStarted } from "../container/GetStarted";
+import {TrendingCoins} from "../container/TrendingCoins";
+import {Overview} from "../container/Overview";
+import {Performance} from "../container/Performance"
+import {Sentiment} from "../container/Sentiment";
+import { About } from "../container/About";
+import { Tokenomics } from "../container/Tokenomics";
+import { Team } from "../container/Team";
 
 function Homepage() {
     return (
@@ -13,6 +16,9 @@ function Homepage() {
                 <Overview />
                 <Performance />
                 <Sentiment />
+                <About />
+                <Tokenomics />
+                <Team />
             </div>
             <div className="mr-[56px]">
                 <div className='mb-5'>

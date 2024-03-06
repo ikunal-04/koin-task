@@ -1,8 +1,8 @@
 import { Info } from 'lucide-react';
-import { PerformanceSectionbar } from './PerfomanceSectionbar';
+import { PerformanceSectionbar } from '../components/PerfomanceSectionbar';
 import bar from "../assets/bar.svg";
-import { Heading } from './Heading';
-import { SubHeading } from './SubHeading';
+import { Heading } from '../components/Heading';
+import { SubHeading } from '../components/SubHeading';
 
 export function Performance() {
     return (

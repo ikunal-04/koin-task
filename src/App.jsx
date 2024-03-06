@@ -1,6 +1,7 @@
-import Navbar from './components/Navbar'
-import Link from './components/Link'
+import Navbar from './container/Navbar'
+import Link from './container/Link'
 import Homepage from './pages/Homepage'
+import Footer from './container/Footer'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Link />
       <Homepage />
+      <Footer />
     </div>
   )
 }

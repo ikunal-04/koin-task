@@ -1,5 +1,6 @@
 import GetStartedLogo from '../assets/Getstarted.svg'
 import { ArrowRight } from 'lucide-react';
+import {Button} from "../components/Button";
 
 export function GetStarted() {
     return (
@@ -16,10 +17,7 @@ export function GetStarted() {
                         <img src={GetStartedLogo} alt="Get Started" />
                     </div>
                     <div className='flex justify-center mt-5'>
-                        <div className='flex items-center gap-2 text-[#0F1629] font-semibold text-base bg-white rounded-lg pt-2 pb-2 pr-6 pl-6 h-12'>
-                            <button>Get Started for FREE </button>
-                            <ArrowRight size={20} />
-                        </div>
+                        <Button title={"Get Stared for FREE"}/>
                     </div>
                 </div>
         </div>
