@@ -14,11 +14,34 @@ export function Sentiment() {
         infinite: false,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1
-      };
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 640, // Adjust breakpoint for mobile screens
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+        };
+
+        const data = [
+            {
+                bgprimary: "bg-[#E8F4FD]",
+                imgSrc: SentimentsLogo1,
+                heading: "Lorem ipsum dolor sit amet consectetur. Dui vel quis dignissim mattis enim tincidunt.",
+                content: "Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis. Amet sapien quam viverra adipiscing condimentum. Ac consectetur et pretium in a bibendum in. Sed vitae sit nisi viverra natoque lacinia libero enim."
+            },
+            {
+                bgprimary: "bg-[#EBF9F4]",
+                imgSrc: SentimentsLogo2,
+                heading: "Lorem ipsum dolor sit amet consectetur. Dui vel quis dignissim mattis enim tincidunt.",
+                content: "Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis. Amet sapien quam viverra adipiscing condimentum. Ac consectetur et pretium in a bibendum in. Sed vitae sit nisi viverra natoque lacinia libero enim."
+            },
+        ]
 
     return (
-        <div className='bg-white p-6 h-max rounded-lg gap-6 mt-5 pb-8'>
+        <div className='bg-white px-4 py-4 h-max sm:p-6 rounded-lg sm:gap-6 mt-5 pb-8'>
             <Heading title={"Sentiment"}/>
             <div className='mt-4'>
                 <SubHeading title={"Key Events"}/>
@@ -26,17 +49,18 @@ export function Sentiment() {
             
             <div className='mt-4'>
             <Slider {...settings}>
+                {data.map((item, index) => {
+                    return ( <div key={index} className=''>
                     <div className=''>
-                        <SentimentCard bgprimary={"bg-[#E8F4FD]"} imgSrc={SentimentsLogo1} heading={"Lorem ipsum dolor sit amet consectetur. Dui vel quis dignissim mattis enim tincidunt."} content={"Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis. Amet sapien quam viverra adipiscing condimentum. Ac consectetur et pretium in a bibendum in. Sed vitae sit nisi viverra natoque lacinia libero enim."}/>
+                        <SentimentCard bgprimary={item.bgprimary} imgSrc={item.imgSrc} heading={item.heading} content={item.content}/>
                     </div>
-                    <div>
-                        <SentimentCard bgprimary={"bg-[#EBF9F4]"} imgSrc={SentimentsLogo2} heading={"Lorem ipsum dolor sit amet consectetur. Dui vel quis dignissim mattis enim tincidunt."} content={"Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis. Amet sapien quam viverra adipiscing condimentum. Ac consectetur et pretium in a bibendum in. Sed vitae sit nisi viverra natoque lacinia libero enim."}/>
-                    </div>
-                   
-                    </Slider>
+                    </div>)
+                })}    
+
+            </Slider>
             </div>
 
-            <div className='mt-8'>
+            <div className='mt-4 sm:mt-8'>
                 <div>
                     <SubHeading title={"Analyst Analysis"}/>
                 </div>
@@ -48,9 +72,9 @@ export function Sentiment() {
                         </div>
                     </div>
                     <div>
-                        <SentimentAnalysis title={"Buy"} price={"76%"} color={"bg-[#00B386]"} width={"w-[350px]"}/>
+                        <SentimentAnalysis title={"Buy"} price={"76%"} color={"bg-[#00B386]"} width={"w-[139px] sm:w-[350px]"}/>
                         <SentimentAnalysis title={"Hold"} price={"8%"} color={"bg-[#C7C8CE]"} width={"w-[33px]"}/>
-                        <SentimentAnalysis title={"Sell"} price={"16%"} color={"bg-[#F7324C]"} width={"w-[66.5px]"}/>
+                        <SentimentAnalysis title={"Sell"} price={"16%"} color={"bg-[#F7324C]"} width={"w-[41px] sm:w-[66.5px]"}/>
                     </div>
                 </div>
             </div>

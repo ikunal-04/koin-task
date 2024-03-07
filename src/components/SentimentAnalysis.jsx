@@ -1,7 +1,7 @@
 
 export function SentimentAnalysis({title, price, color, width}) {
     return (
-        <div className="flex items-center p-3 h-[54px] w-[553px]">
+        <div className="flex items-center w-max h-max p-2 sm:p-3 sm:h-[54px] sm:w-[553px]">
             <div className="font-medium text-sm text-[#768396] pr-7">
                 <p>{title}</p>
             </div>

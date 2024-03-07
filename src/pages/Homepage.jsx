@@ -10,8 +10,8 @@ import { Team } from "../container/Team";
 
 function Homepage() {
     return (
-        <div className="flex gap-5">
-            <div className="ml-16 flex-grow">
+        <div className="gap-9 sm:flex sm:gap-5">
+            <div className="ml-[14px] mr-[14px] sm:mr-0 sm:ml-16 sm:flex-grow">
                 <BitcoinChart />
                 <Overview />
                 <Performance />
@@ -20,11 +20,11 @@ function Homepage() {
                 <Tokenomics />
                 <Team />
             </div>
-            <div className="mr-[56px]">
-                <div className='mb-5'>
+            <div className="sm:ml-0 sm:mr-[56px]">
+                <div className='ml-[14px] mr-[14px] mb-6 sm:mb-5'>
                     <GetStarted />
                 </div>
-                <div>
+                <div className="sm:ml-[14px] sm:mr-[14px]">
                     <TrendingCoins />
                 </div> 
             </div>

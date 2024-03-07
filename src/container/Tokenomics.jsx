@@ -4,7 +4,7 @@ import {SubHeadingWithoutSymbol} from "../components/SubHeadingWithoutSymbol";
 
 export function Tokenomics() {
     return (
-        <div className="bg-white rounded-lg p-6 mt-5 h-[540px]">
+        <div className="hidden sm:inline-block bg-white rounded-lg p-6 mt-5 h-max">
             <div>
                 <Heading title={"Tokenomics"}/>
             </div>

@@ -18,7 +18,7 @@ export function TrendingCoins() {
     }, [])
     
     return (
-        <div className='h-[260px] rounded-lg p-6 gap-6 w-[426px] bg-white'>
+        <div className='h-max sm:rounded-lg px-4 py-6 sm:p-6 gap-6 sm:w-[426px] bg-white'>
             <div className='font-semibold text-xl text-[#0F1629] mb-6'>
                 <p>Trending Coins (24h)</p>
             </div>

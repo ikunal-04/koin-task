@@ -7,11 +7,11 @@ import person3 from "../assets/person3.svg";
 
 export function Team() {
     return (
-        <div className="bg-white rounded-lg p-6 mt-5 h-[776px]">
+        <div className="bg-white rounded-lg px-4 py-4 h-max sm:p-6 mt-5">
             <div>
                 <Heading title={"Team"}/>
             </div>
-            <div className="mt-6">
+            <div className="mt-4 sm:mt-6">
                 <SubHeadingWithoutSymbol description={"Lorem ipsum dolor sit amet consectetur. Id consequat adipiscing arcu nibh. Eget mattis in mi integer sit egestas. Proin tempor id pretium quam. Facilisis purus convallis quam augue."}/>
             </div>
             <div className="mt-6">

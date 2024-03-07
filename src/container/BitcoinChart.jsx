@@ -43,20 +43,20 @@ export function BitcoinChart() {
 
 
     return (
-        <div className="bg-white pt-6 pl-6 pb-8 rounded-lg h-max pr-8">
+        <div className="bg-white pt-4 pr-6 pl-6 pb-9 sm:pt-6 sm:pb-8 rounded-lg h-max sm:pr-8">
             <div className='flex gap-10'>
                 <img src={bitcoin} alt="bitcoin logo" />
-                <div  className='bg-[#768396] border border-[#808A9D] rounded-lg text-white'>
-                    <button className='p-2'>Rank #1</button>
+                <div  className='bg-[#768396] border w-20 flex justify-center sm:w-auto border-[#808A9D] rounded-lg text-white'>
+                    <button className='p-1 sm:p-2'>Rank #1</button>
                 </div>    
             </div>
 
-            <div className='flex flex-start h-[66px] gap-8 mt-10'>
+            <div className='flex flex-start h-[66px] mt-6 gap-8 sm:mt-10'>
                 <div className='text-[#0B1426]'>
                     <h1 className='font-semibold text-lg mb-1'>${usdPrice}</h1>
                     <p className=' text-base font-medium'>~ {inrPrice}</p>
                 </div>
-                <div className='flex justify-center gap-2'>
+                <div className='flex justify-center gap-4 sm:gap-3'>
                     <div>
                         <ShowGain gain={usdChange}/>
                     </div>
@@ -68,11 +68,11 @@ export function BitcoinChart() {
 
             <div className='border border-[#DEE1E6] mt-6 mb-6'></div>
 
-            <div className='flex justify-between mb-10'>
-                <div className='font-semibold text-base text-[#0B1426]'>
+            <div className='sm:flex sm:justify-between mb-4 sm:mb-10'>
+                <div className='font-semibold text-base text-[#0B1426] mb-2 sm:mb-0'>
                     Bitcoin Price Chart (USD)
                 </div>
-                <div className='flex font-medium text-sm text-[#5D667B] justify-end gap-4'>
+                <div className='flex font-medium text-sm text-[#5D667B] sm:justify-end gap-4'>
                     <p>1H</p>
                     <p>24H</p>
                     <p>7D</p>
