@@ -43,8 +43,15 @@ export function BitcoinChart() {
 
 
     return (
-        <div className="bg-white pt-4 pr-6 pl-6 pb-9 sm:pt-6 sm:pb-8 rounded-lg h-max sm:pr-8">
-            <div className='flex gap-10'>
+        <div>
+            <div className='pt-4 pr-6 pl-2 pb-4 inline-flex sm:hidden flex gap-7'>
+                <img src={bitcoin} alt="bitcoin logo" />
+                <div  className='bg-[#768396] border w-20 flex justify-center sm:w-auto border-[#808A9D] rounded-lg text-white'>
+                    <button className='p-1 sm:p-2'>Rank #1</button>
+                </div>    
+            </div>
+            <div className="bg-white pt-4 pr-6 pl-6 pb-9 sm:pt-6 sm:pb-8 rounded-lg h-max sm:pr-8">
+            <div className='hidden sm:inline-flex flex gap-10'>
                 <img src={bitcoin} alt="bitcoin logo" />
                 <div  className='bg-[#768396] border w-20 flex justify-center sm:w-auto border-[#808A9D] rounded-lg text-white'>
                     <button className='p-1 sm:p-2'>Rank #1</button>
@@ -89,5 +96,7 @@ export function BitcoinChart() {
             </div>
             
         </div>
+        </div>
+        
     )
 }
